@@ -1,0 +1,63 @@
+[debug] [2022-10-21T07:37:50.074Z] ----------------------------------------------------------------------
+[debug] [2022-10-21T07:37:50.077Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dunca\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-10-21T07:37:50.078Z] CLI Version:   11.15.0
+[debug] [2022-10-21T07:37:50.079Z] Platform:      win32
+[debug] [2022-10-21T07:37:50.079Z] Node Version:  v16.15.1
+[debug] [2022-10-21T07:37:50.081Z] Time:          Fri Oct 21 2022 15:37:50 GMT+0800 (Taipei Standard Time)
+[debug] [2022-10-21T07:37:50.082Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-21T07:37:50.087Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-10-21T07:37:50.129Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-21T07:37:50.131Z] > authorizing via signed-in user (duncantheinvictus@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\dunca\OneDrive\文件\GitHub\NextFire-app
+
+[debug] [2022-10-21T07:38:01.593Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-10-21T07:38:01.594Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-10-21T08:39:27.758Z] > refreshing access token with scopes: []
+[debug] [2022-10-21T08:39:27.759Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-10-21T08:39:27.759Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-21T08:39:38.943Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-10-21T08:39:38.943Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-21T08:39:38.959Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-10-21T08:39:39.471Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-10-21T08:39:39.471Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project firebasics-780b9 (FireBasics) 
+[info] 
+=== Firestore Setup
+[debug] [2022-10-21T08:39:39.499Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/firebasics-780b9/services/firestore.googleapis.com [none]
+[debug] [2022-10-21T08:39:39.499Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/firebasics-780b9/services/firestore.googleapis.com x-goog-quota-user=projects/firebasics-780b9
+[debug] [2022-10-21T08:39:40.685Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/firebasics-780b9/services/firestore.googleapis.com 200
+[debug] [2022-10-21T08:39:40.685Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/firebasics-780b9/services/firestore.googleapis.com [omitted]
+[debug] [2022-10-21T08:39:40.686Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/firebasics-780b9 [none]
+[debug] [2022-10-21T08:39:40.925Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/firebasics-780b9 200
+[debug] [2022-10-21T08:39:40.926Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/firebasics-780b9 {"name":"apps/firebasics-780b9","id":"firebasics-780b9","authDomain":"gmail.com","locationId":"asia-east2","codeBucket":"staging.firebasics-780b9.appspot.com","servingStatus":"SERVING","defaultHostname":"firebasics-780b9.df.r.appspot.com","defaultBucket":"firebasics-780b9.appspot.com","serviceAccount":"firebasics-780b9@appspot.gserviceaccount.com","gcrDomain":"asia.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[debug] [2022-10-21T08:39:40.926Z] database_type: CLOUD_FIRESTORE
+[debug] [2022-10-21T08:39:40.926Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-21T08:39:40.926Z] > authorizing via signed-in user (duncantheinvictus@gmail.com)
+[debug] [2022-10-21T08:39:40.926Z] [iam] checking project firebasics-780b9 for permissions ["firebase.projects.get"]
+[debug] [2022-10-21T08:39:40.927Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/firebasics-780b9:testIamPermissions [none]
+[debug] [2022-10-21T08:39:40.927Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/firebasics-780b9:testIamPermissions x-goog-quota-user=projects/firebasics-780b9
+[debug] [2022-10-21T08:39:40.927Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/firebasics-780b9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-10-21T08:39:41.820Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/firebasics-780b9:testIamPermissions 200
+[debug] [2022-10-21T08:39:41.820Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/firebasics-780b9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
