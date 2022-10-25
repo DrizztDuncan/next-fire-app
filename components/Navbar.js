@@ -4,6 +4,9 @@ import { UserContext } from "../lib/context";
 
 // top navbar
 export default function Navbar() {
+  // pass user context as argument
+  // any component depend on this value will rerender anytime user or username changes
+  // in our case, sign-in or sign-out, UI will rerender to reflect the updated off state
   const { user, username } = useContext(UserContext);
 
   return (

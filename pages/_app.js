@@ -1,16 +1,16 @@
-import { GetServerSideProps } from "next";
-import Navbar from "../components/Navbar";
-import { Toaster } from "react-hot-toast";
-import { UserContext } from "../lib/context";
-
 import "../styles/globals.css";
+import Navbar from "../components/Navbar";
+import { UserContext } from "../lib/context";
+import { useUserData } from "../lib/hooks";
+import { Toaster } from "react-hot-toast";
 
 function MyApp({ Component, pageProps }) {
+  const userData = useUserData();
+
   return (
-    <UserContext.Provider value={{ user: {}, username: "jeff" }}>
+    <UserContext.Provider value={userData}>
       <Navbar />
       <Component {...pageProps} />
-      {/* ↓↓↓ invisible by default than provide overlay when triggered */}
       <Toaster />
     </UserContext.Provider>
   );
