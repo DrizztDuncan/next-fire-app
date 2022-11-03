@@ -1,3 +1,4 @@
+import Metatags from "../../components/Metatags";
 // page has one on one relationship - one route points to one component
 // but in many cases you many need dynamic route
 // while many different routes may point to the same component
@@ -8,5 +9,10 @@
 // where you can put a segment of that url as a variable
 // in next.js we can add a file like that by wrapping a file name in bracket[] `/admin/[slug].js`
 export default function AdminPostEdit({}) {
-  return <main></main>;
+  return (
+    <main>
+      <Metatags title="admin page" />
+      <h1>Edit post</h1>
+    </main>
+  );
 }
