@@ -52,7 +52,7 @@ function CreateNewPost() {
   const slug = encodeURI(kebabCase(title));
 
   // Validate length
-  const isValid = title.length > 3 && title.lenght < 100;
+  const isValid = title.length > 3 && title.length < 100;
 
   // Create a new post in firestore
   const createPost = async (e) => {
@@ -96,7 +96,7 @@ function CreateNewPost() {
         <string>Slug:</string> {slug}
       </p>
 
-      <button type="submit" disabled={!isValid} className="btn=green">
+      <button type="submit" disabled={!isValid} className="btn-green">
         Create New Post
       </button>
     </form>
