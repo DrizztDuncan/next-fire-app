@@ -86,6 +86,10 @@ function PostForm({ defaultValues, postRef, preview }) {
       published,
       updatedAt: serverTimestamp(),
     });
+    // update msg
+    reset({ content, published });
+
+    toast.success("Post updated successfully!");
   };
 
   return (
@@ -117,7 +121,12 @@ function PostForm({ defaultValues, postRef, preview }) {
         )}
 
         <fieldset>
-          <input className={styles.checkbox} name="published" type="checkbox" />
+          <input
+            className={styles.checkbox}
+            name="published"
+            type="checkbox"
+            {...register("published")}
+          />
           <label>Published</label>
         </fieldset>
 
