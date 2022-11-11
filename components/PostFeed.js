@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getStorage, ref } from "firebase/storage";
 
 export default function PostFeed({ posts, admin }) {
   return posts
