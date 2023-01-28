@@ -3,7 +3,7 @@
 
 Deploy a CMS SPA on [Vercel](https://vercel.com/) to have practical experience with SSR, SSG & ISR.
 
-Check out live the [demo](https://next-fire-app-six.vercel.app/)
+Check out the [demo](https://next-fire-app-six.vercel.app/)
 ## Demo
 
 
